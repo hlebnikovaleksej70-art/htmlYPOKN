@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 2 | Механики HTML</title>
+  <meta name="description" content="Урок 2 по HTML: семантика, структура страницы и полезные теги разметки.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="../index.html" class="logo">Механики HTML</a>
+      <nav class="nav-links">
+        <a href="./lesson-1.html">Предыдущий урок</a>
+        <a href="./lesson-3.html">Следующий урок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lesson-page container">
+    <p class="crumbs"><a href="../index.html">На главную</a> / Урок 2</p>
+    <h1 class="section-title">Урок 2: Семантика и структура</h1>
+
+    <section class="lesson-layout">
+      <article class="lesson-block" data-reveal>
+        <h2>1. Зачем семантика</h2>
+        <p>
+          Семантические теги помогают поисковикам, скринридерам и тебе самому быстрее понимать
+          структуру страницы. Вместо бесконечных `div` лучше использовать осмысленные блоки.
+        </p>
+        <p class="note">
+          Основные теги: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`.
+        </p>
+      </article>
+
+      <article class="lesson-block" data-reveal>
+        <h2>2. Пример структуры</h2>
+        <pre class="code-frame"><code>&lt;body&gt;
+  &lt;header&gt;Шапка сайта&lt;/header&gt;
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;article&gt;Статья 1&lt;/article&gt;
+      &lt;article&gt;Статья 2&lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;Контакты&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+      </article>
+
+      <article class="lesson-block" data-reveal>
+        <h2>3. Практика</h2>
+        <p>Сверстай новостную страницу со следующими блоками:</p>
+        <p class="note">
+          `header` с названием, `main` с 2 статьями и `footer` с копирайтом.
+        </p>
+        <div class="pager">
+          <a class="btn btn-outline" href="./lesson-1.html">К уроку 1</a>
+          <a class="btn btn-primary" href="./lesson-3.html">К уроку 3</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Механики HTML © <span id="year"></span></p>
+      <p>Урок 2 из 3</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

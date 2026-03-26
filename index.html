@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Механики HTML | Уроки по HTML</title>
+  <meta name="description" content="Механики HTML — бесплатные уроки по HTML: от нуля до уверенной верстки.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="./index.html" class="logo">Механики HTML</a>
+      <nav class="nav-links">
+        <a href="#lessons">Уроки</a>
+        <a href="#plan">План</a>
+        <a href="#start">Старт</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="start">
+      <div class="hero-copy" data-reveal>
+        <p class="badge">Практический мини-курс</p>
+        <h1>Уроки по HTML<br>без воды и скуки</h1>
+        <p class="hero-text">
+          Короткие уроки, живые примеры и задания. Проходишь блоки по порядку и собираешь свой первый сайт.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./lessons/lesson-1.html">Начать с урока 1</a>
+          <a class="btn btn-outline" href="#lessons">Открыть уроки</a>
+        </div>
+      </div>
+
+      <article class="hero-panel" data-reveal>
+        <h2>Что ты освоишь</h2>
+        <ul>
+          <li>Базовую структуру HTML-документа</li>
+          <li>Теги текста, списков и ссылок</li>
+          <li>Семантику и структуру страницы</li>
+          <li>Формы, изображения и мультимедиа</li>
+        </ul>
+        <div class="terminal">
+          <span>&lt;h1&gt;Привет, HTML!&lt;/h1&gt;</span>
+          <span>&lt;p&gt;Мой первый сайт запущен.&lt;/p&gt;</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="container lessons" id="lessons">
+      <h2 class="section-title" data-reveal>Уроки</h2>
+      <div class="lesson-grid">
+        <article class="lesson-card" data-reveal>
+          <p class="card-step">Урок 1</p>
+          <h3>Старт: каркас HTML</h3>
+          <p>DOCTYPE, html, head, body и первые теги для текста.</p>
+          <a href="./lessons/lesson-1.html">Открыть урок</a>
+        </article>
+
+        <article class="lesson-card" data-reveal>
+          <p class="card-step">Урок 2</p>
+          <h3>Семантика и структура</h3>
+          <p>header, main, section, article, footer и чистая логика страницы.</p>
+          <a href="./lessons/lesson-2.html">Открыть урок</a>
+        </article>
+
+        <article class="lesson-card" data-reveal>
+          <p class="card-step">Урок 3</p>
+          <h3>Формы и медиа</h3>
+          <p>input, label, button, img, video и базовая доступность.</p>
+          <a href="./lessons/lesson-3.html">Открыть урок</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container roadmap" id="plan">
+      <h2 class="section-title" data-reveal>План на 7 дней</h2>
+      <div class="roadmap-line">
+        <div class="roadmap-item" data-reveal>
+          <h3>День 1-2</h3>
+          <p>Урок 1 + практика: личная визитка на HTML.</p>
+        </div>
+        <div class="roadmap-item" data-reveal>
+          <h3>День 3-4</h3>
+          <p>Урок 2 + разметка полноценной страницы.</p>
+        </div>
+        <div class="roadmap-item" data-reveal>
+          <h3>День 5-6</h3>
+          <p>Урок 3 + форма обратной связи и изображения.</p>
+        </div>
+        <div class="roadmap-item" data-reveal>
+          <h3>День 7</h3>
+          <p>Сборка мини-проекта и публикация на GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Механики HTML © <span id="year"></span></p>
+      <p>Готово для публикации на GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

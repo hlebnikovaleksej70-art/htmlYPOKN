@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 3 | Механики HTML</title>
+  <meta name="description" content="Урок 3 по HTML: формы, медиа, доступность и финальная практика.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="../index.html" class="logo">Механики HTML</a>
+      <nav class="nav-links">
+        <a href="./lesson-2.html">Предыдущий урок</a>
+        <a href="../index.html#lessons">Все уроки</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lesson-page container">
+    <p class="crumbs"><a href="../index.html">На главную</a> / Урок 3</p>
+    <h1 class="section-title">Урок 3: Формы и медиа</h1>
+
+    <section class="lesson-layout">
+      <article class="lesson-block" data-reveal>
+        <h2>1. Форма обратной связи</h2>
+        <p>
+          Используй `label`, чтобы подписи были связаны с полями ввода. Это важно для удобства и доступности.
+        </p>
+        <pre class="code-frame"><code>&lt;form&gt;
+  &lt;label for="name"&gt;Имя&lt;/label&gt;
+  &lt;input id="name" type="text" required&gt;
+
+  &lt;label for="msg"&gt;Сообщение&lt;/label&gt;
+  &lt;textarea id="msg"&gt;&lt;/textarea&gt;
+
+  &lt;button type="submit"&gt;Отправить&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      </article>
+
+      <article class="lesson-block" data-reveal>
+        <h2>2. Картинки и видео</h2>
+        <p class="note">
+          Для изображения обязательно указывай `alt`, чтобы описать картинку текстом.
+        </p>
+        <pre class="code-frame"><code>&lt;img src="cat.jpg" alt="Серый кот сидит на окне"&gt;
+
+&lt;video controls width="420"&gt;
+  &lt;source src="intro.mp4" type="video/mp4"&gt;
+  Ваш браузер не поддерживает видео.
+&lt;/video&gt;</code></pre>
+      </article>
+
+      <article class="lesson-block" data-reveal>
+        <h2>3. Финальная практика</h2>
+        <p>Собери страницу-портфолио:</p>
+        <p class="note">
+          Заголовок, описание, 1 изображение проекта и форму заявки.
+        </p>
+        <div class="pager">
+          <a class="btn btn-outline" href="./lesson-2.html">К уроку 2</a>
+          <a class="btn btn-primary" href="../index.html#start">На главную</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Механики HTML © <span id="year"></span></p>
+      <p>Урок 3 из 3</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

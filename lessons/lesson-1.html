@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 1 | Механики HTML</title>
+  <meta name="description" content="Урок 1 по HTML: каркас документа, базовые теги и первый шаблон страницы.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="../index.html" class="logo">Механики HTML</a>
+      <nav class="nav-links">
+        <a href="../index.html#lessons">Все уроки</a>
+        <a href="./lesson-2.html">Следующий урок</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lesson-page container">
+    <p class="crumbs"><a href="../index.html">На главную</a> / Урок 1</p>
+    <h1 class="section-title">Урок 1: Каркас HTML</h1>
+
+    <section class="lesson-layout">
+      <article class="lesson-block" data-reveal>
+        <h2>1. Минимальная структура</h2>
+        <p>
+          Любая страница начинается с `<!DOCTYPE html>`, затем идут `html`, `head` и `body`.
+          В `head` лежат метаданные, в `body` — весь видимый контент.
+        </p>
+        <pre class="code-frame"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Моя страница&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Привет!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </article>
+
+      <article class="lesson-block" data-reveal>
+        <h2>2. Базовые теги текста</h2>
+        <p>Для текста чаще всего нужны:</p>
+        <p class="note">
+          `h1-h6` — заголовки, `p` — абзацы, `strong` — важный текст, `em` — акцент.
+        </p>
+        <pre class="code-frame"><code>&lt;h1&gt;Заголовок страницы&lt;/h1&gt;
+&lt;p&gt;Это обычный абзац текста.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Важно:&lt;/strong&gt; изучай HTML через практику.&lt;/p&gt;</code></pre>
+      </article>
+
+      <article class="lesson-block" data-reveal>
+        <h2>3. Практика</h2>
+        <p>Сделай файл `about-me.html` и добавь:</p>
+        <p class="note">Заголовок, 2 абзаца о себе и список из 3 любимых занятий.</p>
+        <div class="pager">
+          <a class="btn btn-outline" href="../index.html#lessons">К списку уроков</a>
+          <a class="btn btn-primary" href="./lesson-2.html">К уроку 2</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Механики HTML © <span id="year"></span></p>
+      <p>Урок 1 из 3</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
